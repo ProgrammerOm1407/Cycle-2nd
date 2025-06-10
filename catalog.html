@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CycleHub - Catalog</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="blur-overlay"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CycleHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html" class="active">Catalog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <div class="catalog-title glass-card">
+                    <h1>Cycle Catalog</h1>
+                    <p>Find the perfect bicycle for your needs</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="catalog-layout">
+                    <aside class="filter-sidebar glass-card">
+                        <h3>Filters</h3>
+                        <div class="filter-group">
+                            <h4>Cycle Type</h4>
+                            <div class="filter-options" id="type-filters">
+                                <!-- Type filters will be loaded here -->
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Brands</h4>
+                            <div class="filter-options" id="brand-filters">
+                                <!-- Brand filters will be loaded here -->
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h4>Price Range</h4>
+                            <div class="price-slider">
+                                <input type="range" id="price-range" min="0" max="10000" step="100">
+                                <div class="price-values">
+                                    <span id="min-price">$0</span>
+                                    <span id="max-price">$10,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="apply-filters" class="btn">Apply Filters</button>
+                        <button id="reset-filters" class="btn btn-outline">Reset</button>
+                    </aside>
+
+                    <div class="catalog-content">
+                        <div class="catalog-header glass-card">
+                            <div class="result-count">
+                                <span id="product-count">0</span> products found
+                            </div>
+                            <div class="sort-options">
+                                <label for="sort-by">Sort by:</label>
+                                <select id="sort-by">
+                                    <option value="popularity">Popularity</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="newest">Newest First</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="product-grid" id="product-grid">
+                            <!-- Products will be loaded here using JavaScript -->
+                        </div>
+
+                        <div class="pagination glass-card">
+                            <button class="page-btn" id="prev-page" disabled><i class="fas fa-chevron-left"></i></button>
+                            <div class="page-numbers" id="page-numbers">
+                                <!-- Page numbers will be generated here -->
+                            </div>
+                            <button class="page-btn" id="next-page"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CycleHub</h3>
+                    <p>Premium bicycles for every terrain and lifestyle.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="catalog.html?type=mountain">Mountain Bikes</a></li>
+                        <li><a href="catalog.html?type=road">Road Bikes</a></li>
+                        <li><a href="catalog.html?type=city">City Bikes</a></li>
+                        <li><a href="catalog.html?type=electric">Electric Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Cycle Street, Bike City</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> info@cyclehub.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CycleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/products.js"></script>
+    <script src="scripts/catalog.js"></script>
+</body>
+</html>

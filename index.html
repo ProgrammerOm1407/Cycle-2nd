@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CycleHub - Premium Bicycles</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="blur-overlay"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CycleHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content glass-card">
+                    <h1>Find Your Perfect Ride</h1>
+                    <p>Discover premium bicycles for every terrain and lifestyle</p>
+                    <a href="catalog.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Browse By Category</h2>
+                <div class="category-grid">
+                    <a href="catalog.html?type=mountain" class="category-card glass-card">
+                        <div class="category-image">
+                            <img src="images/mountain-bike.jpg" alt="Mountain Bikes">
+                        </div>
+                        <h3>Mountain Bikes</h3>
+                    </a>
+                    <a href="catalog.html?type=road" class="category-card glass-card">
+                        <div class="category-image">
+                            <img src="images/road-bike.jpg" alt="Road Bikes">
+                        </div>
+                        <h3>Road Bikes</h3>
+                    </a>
+                    <a href="catalog.html?type=city" class="category-card glass-card">
+                        <div class="category-image">
+                            <img src="images/city-bike.jpg" alt="City Bikes">
+                        </div>
+                        <h3>City Bikes</h3>
+                    </a>
+                    <a href="catalog.html?type=electric" class="category-card glass-card">
+                        <div class="category-image">
+                            <img src="images/electric-bike.jpg" alt="Electric Bikes">
+                        </div>
+                        <h3>Electric Bikes</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-brands">
+            <div class="container">
+                <h2 class="section-title">Featured Brands</h2>
+                <div class="brand-slider glass-card">
+                    <div class="brand-logo"><img src="images/brand1.png" alt="Brand 1"></div>
+                    <div class="brand-logo"><img src="images/brand2.png" alt="Brand 2"></div>
+                    <div class="brand-logo"><img src="images/brand3.png" alt="Brand 3"></div>
+                    <div class="brand-logo"><img src="images/brand4.png" alt="Brand 4"></div>
+                    <div class="brand-logo"><img src="images/brand5.png" alt="Brand 5"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Products will be loaded here using JavaScript -->
+                </div>
+                <div class="view-all">
+                    <a href="catalog.html" class="btn">View All Products</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CycleHub</h3>
+                    <p>Premium bicycles for every terrain and lifestyle.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="catalog.html?type=mountain">Mountain Bikes</a></li>
+                        <li><a href="catalog.html?type=road">Road Bikes</a></li>
+                        <li><a href="catalog.html?type=city">City Bikes</a></li>
+                        <li><a href="catalog.html?type=electric">Electric Bikes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Cycle Street, Bike City</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> info@cyclehub.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CycleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/products.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
